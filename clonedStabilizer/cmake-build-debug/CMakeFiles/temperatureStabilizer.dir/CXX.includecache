@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ozy/CLionProjects/temperatureStabilizer/main.cpp
+iostream
+-
+zconf.h
+-
+sstream
+-
+vector
+-
+

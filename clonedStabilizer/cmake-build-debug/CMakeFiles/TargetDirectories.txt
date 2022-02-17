@@ -1,0 +1,3 @@
+/Users/ozy/CLionProjects/temperatureStabilizer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ozy/CLionProjects/temperatureStabilizer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ozy/CLionProjects/temperatureStabilizer/cmake-build-debug/CMakeFiles/temperatureStabilizer.dir
