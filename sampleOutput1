@@ -1,0 +1,57 @@
+ctemp 29
+Central Temp is now 29
+external 30 70 31
+34363: Set initial temperature to 30
+34364: Set initial temperature to 70
+34365: Set initial temperature to 31
+etemp 34364 33
+34364: Ext. temperature set to 33
+status
+Alpha = 0.9 K = 200
+Central temp is 29
+#  PID  Enabled  Temperature
+--------------------------------
+1  34364  Yes     33.000000
+0  34363  Yes     30.000000
+2  34365  Yes     31.000000
+alpha 0.2
+34363: set alpha to 0.2
+34364: set alpha to 0.2
+34365: set alpha to 0.2
+start
+Temperature [29.0069] 29.2 29.8 29.4
+Temperature [29.0083] 29.0455 29.1655 29.0855
+Temperature [29.0085] 29.0157 29.0397 29.0237
+Temperature [29.0086] 29.01 29.0148 29.0116
+The system stabilized at: 29.0086
+disable 34365
+34365 Has been disabled
+status
+Alpha = 0.9 K = 200
+Central temp is 29.0086
+#  PID  Enabled  Temperature
+--------------------------------
+0  34363  Yes     29.009960
+1  34364  Yes     29.014760
+2  34365  No      29.011560
+ctemp 600
+Central Temp is now 600
+start
+Temperature [598.869] 485.802 485.803
+Temperature [598.645] 576.256 576.256
+Temperature [598.601] 594.168 594.168
+Temperature [598.592] 597.714 597.714
+Temperature [598.591] 598.417 598.417
+Temperature [598.59] 598.556 598.556
+Temperature [598.59] 598.583 598.583
+The system stabilized at: 598.59
+enable 34365
+34365 Has been enabled
+status
+Alpha = 0.9 K = 200
+Central temp is 598.59
+#  PID  Enabled  Temperature
+--------------------------------
+0  34363  Yes     598.583354
+1  34364  Yes     598.583354
+2  34365  Yes     29.011560

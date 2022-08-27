@@ -1,0 +1,36 @@
+status
+Alpha = 0.9 K = 200
+Central temp is 0
+external 10 20 30 40
+34527: Set initial temperature to 10
+34528: Set initial temperature to 20
+34529: Set initial temperature to 30
+34530: Set initial temperature to 40
+delay 3
+disable 34527
+34527 Has been disabled
+status
+Alpha = 0.9 K = 200
+Central temp is 0
+#  PID  Enabled  Temperature
+--------------------------------
+0  34527  No      10.000000
+3  34530  Yes     40.000000
+1  34528  Yes     20.000000
+2  34529  Yes     30.000000
+enable 34527
+34527 Has been enabled
+status
+Alpha = 0.9 K = 200
+Central temp is 0
+#  PID  Enabled  Temperature
+--------------------------------
+1  34528  Yes     20.000000
+0  34527  Yes     10.000000
+2  34529  Yes     30.000000
+3  34530  Yes     40.000000
+quit
+34530 is shutting down
+34529 is shutting down
+34528 is shutting down
+34527 is shutting down
